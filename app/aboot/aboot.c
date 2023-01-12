@@ -102,6 +102,9 @@
 #if WITH_LK2ND_DEVICE
 #include <lk2nd/device.h>
 #endif
+#if WITH_LK2ND_DISPLAY_MENU
+#include <lk2nd/menu.h>
+#endif
 
 extern  bool target_use_signed_kernel(void);
 extern void platform_uninit(void);
@@ -5714,6 +5717,10 @@ fastboot:
 #endif
 #if FBCON_DISPLAY_MSG
 	display_fastboot_menu();
+#endif
+
+#if WITH_LK2ND_DISPLAY_MENU
+	lk2nd_fastboot_menu();
 #endif
 }
 
