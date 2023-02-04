@@ -1,0 +1,22 @@
+// SPDX-License-Identifier: GPL-2.0-only
+
+#include <skeleton32.dtsi>
+#include <lk2nd.dtsi>
+
+/ {
+	/*
+	 * Bootloader actually wants the compatible to have the soc in it...
+	 * It also doesn't care about the qcom,msm-id but let it be here for
+	 * the completeness...
+	 */
+	compatible = "qcom,apq8026";
+	qcom,msm-id = <199 0x20000>;
+	qcom,board-id = <132 0x0a>;
+};
+
+&lk2nd {
+	lg-lenok {
+		model = "LG G Watch R";
+		compatible = "lg,lenok";
+	};
+};

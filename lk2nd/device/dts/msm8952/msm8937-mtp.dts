@@ -1,0 +1,18 @@
+// SPDX-License-Identifier: BSD-3-Clause
+
+#include <skeleton64.dtsi>
+#include <lk2nd.dtsi>
+
+/ {
+	model = "Wileyfox Swift2 X50 Series";
+	compatible = "qcom,msm8937-mtp", "qcom,msm8937", "qcom,mtp";
+	qcom,msm-id = <0x126 0x00>;
+	qcom,board-id = <0x08 0x00>;
+	qcom,pmic-id = <0x10019 0x10011 0x00 0x00>;
+
+};
+
+&lk2nd {
+	model = "Wileyfox Swift 2";
+	compatible = "wileyfox,marmite";
+};
