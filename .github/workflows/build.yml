@@ -21,4 +21,4 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
           name: S5 Mini LK
-          path: /home/runner/work/lk2nd/build-msm8226/lk.bin
+          path: /home/runner/work/lk2nd/lk2nd/build-msm8226/emmc_appsboot.mbn
