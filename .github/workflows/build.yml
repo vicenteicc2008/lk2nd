@@ -18,3 +18,7 @@ jobs:
           sudo apt-get install -yqq gcc gcc-arm-none-eabi device-tree-compiler libfdt-dev make python3
       - name: Build ${{ inputs.project }}
         run: make -j$(nproc) TOOLCHAIN_PREFIX=arm-none-eabi- ${{ inputs.vars }} ${{ inputs.project }}
+      - uses: actions/upload-artifact@v3
+        with:
+          name: S5 Mini LK
+          path: ./build-msm8226/lk.bin
