@@ -7,7 +7,7 @@
 
 / {
 	// This is used by the bootloader to find the correct DTB
-        qcom,msm-id =  <0xdd08ff01 0x03 0x20000>;
+        qcom,msm-id =  <0xdf08ff01 0x03 0x20000>;
 	atlantic3g {
 		model = "[ATLANTIC-3G] Rev-03-MTP-v2";
 		compatible = "samsung,atlantic3g", "qcom,msm8226", "lk2nd,device";
