@@ -19,5 +19,9 @@
 			<KEY_HOME       108 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>,
 			<KEY_VOLUMEDOWN 107 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>,
 			<KEY_VOLUMEUP   106 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
+                samsung,muic-reset {
+			i2c-gpio-pins = <9 34>;
+			i2c-address = <0x25>;
+
 	};
 };
