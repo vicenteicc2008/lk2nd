@@ -28,5 +28,9 @@ jobs:
           path: /home/runner/work/lk2nd/lk2nd/build-lk2nd-msm8226/lk.bin-dtb
       - uses: actions/upload-artifact@v3
         with:
-          name: S5 Mini emmc_appsboot.img
+          name: S5 Mini emmc_appsboot.mbn
           path: /home/runner/work/lk2nd/lk2nd/build-lk2nd-msm8226/emmc_appsboot.mbn
+      - uses: actions/upload-artifact@v3
+        with:
+          name: S5 Mini dtb
+          path: /home/runner/work/lk2nd/lk2nd/build-lk2nd-msm8226/dts/msm8226/msm8926-samsung-r03.dts
