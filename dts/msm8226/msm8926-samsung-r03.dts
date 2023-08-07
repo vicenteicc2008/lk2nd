@@ -20,7 +20,7 @@
 
                 samsung,muic-reset {
 			i2c-gpio-pins = <4 5>;
-			i2c-address = <0x15>;
+			i2c-address = <0x25>;
                 };
 
 	};
