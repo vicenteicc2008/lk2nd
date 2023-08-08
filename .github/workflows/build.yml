@@ -33,4 +33,4 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
           name: S5 Mini dtb
-          path: /home/runner/work/lk2nd/lk2nd/build-lk2nd-msm8226/dts/msm8226/msm8926-samsung-r03.dtb
+          path: /home/runner/work/lk2nd/lk2nd/build-lk2nd-msm8226/dts/msm8226/msm8228-samsung-r03.dtb
