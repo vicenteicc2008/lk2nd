@@ -7,12 +7,13 @@
 
 / {
 	// This is used by the bootloader to find the correct DTB
-        qcom,msm-id = <0xDD08FF01 5 0x20000>;
+        qcom,msm-id = <0xDD08FF01 3 0x20000>;
 	kmini3g {
 		model = "Samsung Galaxy S5 Mini Duos (3G)";
 		compatible = "samsung,kmini3g", "qcom,msm8226", "lk2nd,device";
                 lk2nd,match-bootloader = "G800H*";
                 lk2nd,match-panel;
+
                 samsung,muic-reset {
 			i2c-gpio-pins = <4 5>;
 			i2c-address = <0x25>;
