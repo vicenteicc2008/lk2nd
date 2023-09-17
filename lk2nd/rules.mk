@@ -6,9 +6,12 @@ OBJS += \
 	$(LOCAL_DIR)/lk2nd-motorola.o \
 	$(LOCAL_DIR)/lk2nd-rproc.o \
 	$(LOCAL_DIR)/lk2nd-smd-rpm.o \
-	$(LOCAL_DIR)/target_keys_lk2nd.o
+	$(LOCAL_DIR)/target_keys_lk2nd.o \
+        $(LOCAL_DIR)/lk2nd-samsung.o
 
-OBJS += $(LOCAL_DIR)/lk2nd-samsung.o
+ifneq ($(GPIO_I2C_BUS_COUNT),)
+MODULES += lk2nd/regmap
+endif
 
 ifeq ($(TARGET),msm8916)
 MODULES += lk2nd/smb1360
