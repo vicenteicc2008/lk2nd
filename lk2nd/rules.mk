@@ -8,7 +8,6 @@ OBJS += \
 	$(LOCAL_DIR)/lk2nd-smd-rpm.o \
 	$(LOCAL_DIR)/target_keys_lk2nd.o
 
-MODULES += lk2nd/regmap
 OBJS += $(LOCAL_DIR)/lk2nd-samsung.o
 
 ifeq ($(TARGET),msm8916)
